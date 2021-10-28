@@ -31,3 +31,12 @@ hcloud context create chaco # message: Context chaco created and activated
 hcloud context list
 ```
 
+```{r, engine='bash', eval=TRUE}
+hcloud server-type list
+```
+
+Launch the server as follows:
+
+```{r, engine='bash'}
+hcloud server create --image ubuntu-20.04 --type cx41 --name chaco
+```
